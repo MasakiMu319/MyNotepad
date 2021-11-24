@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QLabel>
+#include "highlighter.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -81,5 +82,6 @@ private:
     bool textChanged;
 
     bool userEditConfirmed();
+    Highlighter *highligher;
 };
 #endif // MAINWINDOW_H

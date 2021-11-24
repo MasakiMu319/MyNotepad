@@ -8,6 +8,8 @@
 #include "QTextStream"
 #include "QColorDialog"
 #include "QFontDialog"
+#include <QMimeDatabase>
+#include <QtCore>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -49,6 +51,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->actionStatusbar->setCheckable(true);
 
     connect(ui->actionLineNumber, SIGNAL(triggered(bool)), ui->textEdit, SLOT(hideLineNumberArea(bool)));
+
+    highligher = new Highlighter(ui->textEdit->document());
 }
 
 MainWindow::~MainWindow()
@@ -91,6 +95,11 @@ void MainWindow::on_actionNew_triggered()
     textChanged = false;
 }
 
+static QMimeType getMimeType (const QFileInfo &fInfo)
+{
+    QMimeDatabase mimeDatabase;
+    return mimeDatabase.mimeTypeForFile (fInfo);
+}
 
 void MainWindow::on_actionOpen_triggered()
 {
