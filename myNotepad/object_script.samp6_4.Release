@@ -1,0 +1,14 @@
+release/main.o
+release/aboutdialog.o
+release/highlighter.o
+release/qwmainwindow.o
+release/qformdoc.o
+release/replacedialog.o
+release/searchdialog.o
+release/qrc_res.o
+release/moc_qwmainwindow.o
+release/moc_aboutdialog.o
+release/moc_highlighter.o
+release/moc_qformdoc.o
+release/moc_replacedialog.o
+release/moc_searchdialog.o

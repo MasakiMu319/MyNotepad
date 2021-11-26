@@ -1,0 +1,14 @@
+debug/main.o
+debug/aboutdialog.o
+debug/highlighter.o
+debug/qwmainwindow.o
+debug/qformdoc.o
+debug/replacedialog.o
+debug/searchdialog.o
+debug/qrc_res.o
+debug/moc_qwmainwindow.o
+debug/moc_aboutdialog.o
+debug/moc_highlighter.o
+debug/moc_qformdoc.o
+debug/moc_replacedialog.o
+debug/moc_searchdialog.o
